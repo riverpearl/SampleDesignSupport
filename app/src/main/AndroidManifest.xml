@@ -41,7 +41,11 @@
         <activity
             android:name=".NaviDrawerActivity"
             android:label="@string/title_activity_navi_drawer"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NavigationDrawerActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
