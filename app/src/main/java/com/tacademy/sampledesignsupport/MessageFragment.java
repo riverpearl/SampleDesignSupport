@@ -9,15 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link MessageFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link MessageFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class MessageFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -57,4 +48,13 @@ public class MessageFragment extends Fragment {
         return view;
     }
 
+    // 타이틀 설정하는 법... 아래와 같이 해주는 게 일반적인 방법!
+    // 프래그먼트를 띄워주는 액티비티에서 listener 등록해서 설정해도 됨.
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+
+        if (getActivity() == null) return;
+        if (isVisibleToUser) getActivity().setTitle(message);
+    }
 }
