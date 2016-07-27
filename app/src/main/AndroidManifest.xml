@@ -45,7 +45,12 @@
         <activity
             android:name=".NavigationDrawerActivity"
             android:exported="true"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CustomNavigationActivity"
+            android:label="@string/title_activity_custom_navigation"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
