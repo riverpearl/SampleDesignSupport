@@ -31,9 +31,13 @@
             android:name=".AppbarActivity"
             android:exported="true"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".CollapsingActivity"
+        <activity
+            android:name=".CollapsingActivity"
             android:exported="true"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DrawerActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
