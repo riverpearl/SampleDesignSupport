@@ -27,8 +27,13 @@
         <activity
             android:name=".FABActivity"
             android:exported="true" />
-        <activity android:name=".AppbarActivity" android:exported="true"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".AppbarActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CollapsingActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
