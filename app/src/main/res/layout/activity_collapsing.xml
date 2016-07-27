@@ -56,5 +56,11 @@
         app:layout_anchor="@+id/appbar"
         app:layout_anchorGravity="right|end|bottom" />
 
+    <com.tacademy.sampledesignsupport.ElevationImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        app:layout_anchor="@+id/appbar"
+        app:layout_anchorGravity="left|start|bottom"/>
 
 </android.support.design.widget.CoordinatorLayout>
